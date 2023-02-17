@@ -13,6 +13,9 @@ cd dist
 # place .nojekyll to bypass Jekyll processing
 echo > .nojekyll
 
+git config --global user.email "ci@example.com"
+git config --global user.name "CI"
+
 git init
 git checkout -B main
 git add -A
