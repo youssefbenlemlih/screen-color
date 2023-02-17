@@ -6,7 +6,7 @@ const maxHistoryLength = 25;
 export const useColors = () => {
   const [selectedColor, setSelectedColor] = useLocalState(
     "selected-color",
-    "black"
+    "#000000"
   );
   const debouncedSelectedColor = useDebounce<string>(selectedColor, 500);
 
